@@ -18,6 +18,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import android.widget.Button;
+import android.widget.Toast;
+
+import com.nekimimi_miko.android.oneselfsmemo.R.id;
+
 
 public class Memo extends ActionBarActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -66,6 +71,11 @@ public class Memo extends ActionBarActivity
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+//move button to here when finished
+                break;
+            case 4:
+                mTitle = getString(R.string.title_section4);
+                Toast.makeText(this, "test", Toast.LENGTH_LONG).show();
                 break;
         }
     }
